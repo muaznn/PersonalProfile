@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: url("image/bg3.jpg");
+    background-repeat: repeat;      
+    background-size: auto; 
+    background-position: top left; 
+}
+
+.card {
+    width: 550px;
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.1)
+    ); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 30px; 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a; 
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    margin-left: 10px; 
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Focus State: When user clicks the box */
+input:focus, textarea:focus {
+    background: #ffffff;
+    border-color: #1976f2;
+    box-shadow: 0 0 0 4px rgba(25, 118, 242, 0.15);
+}
+
+/* The Glass Button */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 50px; 
+    background: #1976f2;
+    color: #ffffff;
+    border: 1px solid #1976f2;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(25, 118, 242, 0.3);
+}
+
+/* Button Hover State: Clear Glass Effect */
+button:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(4px);     
+    color: #1976f2; 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px); 
+}
+
+/* PROFILE DATA LIST STYLING */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
+}
+
+/* Remove border from the last item */
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+.profile-label {
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+    width: 30%; 
+}
+
+.profile-value {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 15px;
+    width: 70%;
+    text-align: left; 
+    word-wrap: break-word;
+}
+
+/* list page*/
+
+/* Main Container */
+.main-container {
+    width: 95%;      
+    margin: 40px auto; 
+    padding: 0;
+}
+
+/* Page Title */
+.page-title {
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #fff; 
+    background: rgba(0, 0, 0, 0.4); /* Darker Glass Background */
+    backdrop-filter: blur(5px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Table */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Header*/
+.modern-table th {
+    text-align: left;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.4); 
+    color: #fff;               
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Row  */
+.modern-table td {
+    padding: 18px 20px;
+    color: #333;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+/* Remove border from last row */
+.modern-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Row Hover Effect */
+.modern-table tbody tr:hover {
+    background: rgba(25, 118, 242, 0.1); 
+}
+
+/* Search Bar */
+.floating-search {
+    width: 60%; 
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 50px; 
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: white; 
+}
+
+/* Search Inputs */
+.floating-search input {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0; 
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    flex: 1; 
+}
+
+/* Fit to text Buttons */
+.btn-fit {
+    width: auto !important; 
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition:  transform 0.2s, background 0.2s;
+    background: #1976f2; 
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-fit:hover {
+    transform: scale(1.05);
+    background: #115293;
+}
+
+.btn-red { background: #dc3545; }
+.btn-red:hover { background: #a71d2a; }
+
+.btn-grey { background: #6c757d; }
+.btn-grey:hover { background: #545b62; }
+
+.form-actions {
+    display: flex;
+    justify-content: center; 
+    gap: 15px;               
+    margin-top: 20px;
+}
+
+.btn-form {
+    width: 120px;           
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+/* Green Save Button */
+.btn-save {
+    background: #28a745;
+    border: 2px solid #28a745; 
+    color: white;
+}
+.btn-save:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(4px); 
+    color: #28a745; 
+    border-color:#28a745;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+.btn-save-blue {
+    background: #1976f2;
+    border: 2px solid #1976f2; 
+    color: white;
+}
+.btn-save-blue:hover {
+    /*background: rgba(255, 255, 255, 0.1);*/ 
+    backdrop-filter: blur(4px); 
+    color: #1976f2; 
+    border-color:#1976f2;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+    background: #ffffff;
+}
+
+/* Grey Cancel Button  */
+.btn-cancel {
+    background: #6c757d;
+    border: 2px solid #6c757d; 
+    color: white;
+}
+.btn-cancel:hover {
+    background: #ffffff;    
+    color: #dc3545;         
+    border-color: #dc3545; 
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3); 
+}
